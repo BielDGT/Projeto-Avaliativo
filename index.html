@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Projeto Avaliativo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./Assets/Css/Style.css">
+
+    <link rel="shortcut icon" href="./Assets/Fotos/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="./Assets/Fotos/Logo.png" alt="Logo">
+                <h1>TWM</h1>
+            </a>
+
+            <ul>
+                <li><a href="#principal">Destaque</i></a></li>
+                <li><a href="#recomendação">Motos</a></li>
+                <li><a href="#formulario">Fale Conosco</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <main class="carrossel-container">
+            <div class="carrossel">
+                <img src="./Assets/Fotos/Banner0.jpg" alt="banner 00">
+                <img src="./Assets/Fotos/Banner1.jpg" alt="banner 01">
+                <img src="./Assets/Fotos/Banner2.jpg" alt="banner 02">
+                <img src="./Assets/Fotos/Banner3.jpg" alt="banner 03">
+            </div>
+
+            <button class="anterior" onclick="javascript:voltarSlide()"><i class="bi bi-arrow-left"></i></button>
+            <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-arrow-right"></i></button>
+        </main>
+    </section>
+
+    <section id="principal">
+        <div>
+            <img src="./Assets/Fotos/moto0.png" alt="foto_destaque">
+        </div>
+        <div>
+            <h2>Fazer FZ 15 </h2>
+            <p>A Yamaha Fazer FZ 15 brasileira é uma motocicleta derivada de um projeto da marca japonesa
+                disponibilizado em diferentes mercados da Ásia. Porém, o modelo recebeu algumas mudanças exclusivas ao
+                mercado nacional. A FZ do Brasil teve seu farol redesenhado e apresenta grafismos inéditos, por exemplo.
+
+                Além disso, a moto nacional recebeu um motor de 150cc Blue Flex - mesmo propulsor das Factor, Crosser e
+                da Fazer 150. Aliás, este é o único componente que a Fazer FZ 15 têm em comum com as outras motos 150 cc
+                da Yamaha no Brasil.
+
+                À primeira vista, a Yamaha Fazer FZ 15 se parece em muito com uma Fazer 250, mas com um motor de 150cc.
+                Isso porque a “15” tem linhas mais encorpadas e a adição de carenagens extras. Tudo isso junto de itens
+                vistos apenas em motos de maior porte.
+                <br>
+                <br>
+                A FZ 15 tem suspensão dianteira com garfo telescópico de 130 mm de curso. O tubo das bengalas possui 41
+                mm de diâmetro, nada menos que a mesma medida das peças usadas pela naked MT-07. Na traseira, a FZ
+                apresenta amortecedor monoshock com ajuste de pré-carga e 120 mm de curso, item incomum para a sua
+                categoria.
+
+                Mas a street Yamaha tem ainda demais itens comuns apenas em motos de maior cilindrada. A FZ 15 tem rodas
+                de liga leve de 17 polegadas, calçadas também pneus bem mais largos.
+
+                Na dianteira, o composto tem medida de 100/80, enquanto a traseira é 140/60, mesma largura que a vista
+                na irmã maior Fazer 250. Já os pneus são Pirelli Diablo Rosso II. Para complementar, a moto 150 tem
+                freios a disco em ambas as rodas, com pinças da ByBre, subsidiária da Brembo.
+
+            </p>
+        </div>
+    </section>
+
+    <section id="recomendação">
+        <div class="cards">
+            <figure>
+                <img src="./Assets/Fotos/moto1.webp" alt="" class="imagem">
+                <figcaption>
+                    <h4>Pop 110i ES</h4>
+                    <p>Com a nova Pop 110i ES, levar a vida numa Honda é muito mais fácil. A partida elétrica do modelo
+                        garante que você tenha agilidade e comodidade no dia a dia</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./Assets/Fotos/moto2.webp" alt="" class="imagem">
+                <figcaption>
+                    <h4>CG 160 Titan</h4>
+                    <p>A CG 160 Titan é para quem não abre mão de personalidade e eficiência. Com freio ABS, LED no
+                        farol e lanterna e um design marcante, ela eleva o padrão em cada detalhe.</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./Assets/Fotos/moto3.webp" alt="" class="imagem">
+                <figcaption>
+                    <h4>CG 160 Start</h4>
+                    <p>A CG 160 Start é perfeita para quem quer economia e qualidade. Design moderno e freios CBS, ela é
+                        ótima para enfrentar o trânsito
+                        com segurança e estilo.</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="formulario">
+
+        <form action="#" method="get">
+            <h2>Formulario</h2>
+            <input type="text" id="campo1" placeholder="Nome completo" name="Nome">
+            <br>
+            <input type="tel" id="campo2" placeholder="Telefone" name="Telefone">
+            <input type="number" id="campo3" placeholder="Idade" name="Idade">
+            <br>
+            <input type="text" id="campo4" placeholder="Assunto" name="Assunto">
+            <br>
+            <input type="text" id="campo5" placeholder="Mensagem" name="Mensagem">
+            <br>
+            <input type="submit" id="enviar">
+        </form>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.9002373911535!2d-47.33543172393827!3d-22.731949131647287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89b1fb110462d%3A0x766d20b027e44b6e!2sHonda%20Beni%20Motos!5e0!3m2!1spt-BR!2sbr!4v1738068289259!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <ol>
+                <li>TWM</li>
+                <br>
+                <li><a href="#">Modelos</a></li>
+                <br>
+                <li><a href="#">Store</a></li>
+                <br>
+                <li><a href="#">Concessionaria</a></li>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <li>Serviços</li>
+                <br>
+                <li><a href="#">Financeiro</a></li>
+                <br>
+                <li><a href="#">Pos-Venda</a></li>
+                <br>
+                <li><a href="#">Recall</a></li>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <li>Outros</li>
+                <br>
+                <li><a href="#">TWO Racing</a></li>
+                <br>
+                <li><a href="#">RedRider</a></li>
+                <br>
+                <li><a href="#">Contato</a></li>
+            </ol>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+<script src="./Assets/Js/script.js"></script>
+
+</html>
